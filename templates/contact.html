@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Join Us{% endblock title %}
+{% load crispy_forms_tags %}
+{% block body %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <div class="content-section" style="font-family: 'Montserrat', sans-serif; background-color: #def6fc;">
+        <form method="POST">
+            {% csrf_token %}
+                 <div class="pl-md-5">
+                <legend class="border-bottom mb-4" style="font-weight: bold; font-size: 35px; text-align: center;">Join Today</legend>
+                  {{ form|crispy }}
+
+                 </div>
+
+            <div class="form-group pl-md-5">
+                <button type="submit" class="btn btn-primary" style="margin-top: 2%; margin-bottom: 2.8%; font-size: 20px;">Sign Up</button>
+            </div>
+        </form>
+        <div class="border-top pl-md-5">
+            <small class="text-muted" style="font-size: 17px;">
+                Already Have An Account? <a class="ml-2" href="/login">Sign In</a>
+            </small>
+        </div>
+    </div>
+{% endblock body %}

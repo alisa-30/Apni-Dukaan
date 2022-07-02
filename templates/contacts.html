@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+{% block body%}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,900;1,900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<div class="container-fluid px-0" style="background-color: #def6fc;">
+    <img src="https://xcoders.in/wp-content/uploads/2020/06/contact-us-banner.png" class="d-block w-100 mx-0" alt="Contact-us">
+</div>
+<div style="background-color: #def6fc;">
+
+<div class="container" style="background-color: #def6fc; padding-top: 60px;">
+    <h2 class="text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 900; margin-bottom: 60px; ">Have any questions? We'd love to hear from you!</h1>
+        <div class="card-deck" style="margin: 3% 1% 3% 1%; font-family: 'Montserrat', sans-serif;">
+            <div class="card">
+                <a href="https://ibb.co/JvXWJ1V"><img src="https://i.ibb.co/c6zKnB0/Dushyant-Photo.jpg" alt="Dushyant-Photo" border="0" style="width: 200px; margin-left: 20px; margin-top: 5px; border-radius: 100px;"></a>
+              <div class="card-body">
+                <center>
+                <h5 class="card-title" style="font-weight: bold">Dushyant</h5>
+                <p class="card-text">Designer and Front End Web Developer</p>
+            </center>
+              </div>
+              <div class="card-footer">
+                <center><small class="text-muted">Know more</small></center>
+                </div>
+            </div>
+            <div class="card">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/hmCgM95/Alisa.png" alt="Alisa" border="0" style="width: 200px; margin-left: 20px;"></a>
+              <div class="card-body">
+                <center><h5 class="card-title" style="font-weight: bold">Alisa</h5>
+                <p class="card-text">Backend Web Developer and Researcher</p></center>
+              </div>
+              <div class="card-footer">
+                <center><small class="text-muted">Know more</small></center>
+              </div>
+            </div>
+            <div class="card">
+                <a href="https://imgbb.com/"><img src="https://i.ibb.co/Vt7YnqT/Ananya.jpg" alt="Ananya" border="0" style="width: 200px; margin-left: 20px; margin-top: 5px; border-radius: 100px;"></a>
+              <div class="card-body">
+                <center><h5 class="card-title" style="font-weight: bold">Ananya</h5>
+                    <p class="card-text">Frontend Web Developer and Data Manager</p></center>
+              </div>
+              <div class="card-footer">
+                <center><small class="text-muted">Know more</small></center>
+              </div>
+            </div>
+            <div class="card">
+                <a href="https://ibb.co/XXdBz3Z"><img src="https://i.ibb.co/CBXdnM5/Rachit.jpg" alt="Rachit" border="0" style="width: 200px; margin-left: 20px; margin-top: 5px; border-radius: 100px;"></a>
+                <div class="card-body">
+                    <center><h5 class="card-title" style="font-weight: bold">Rachit</h5>
+                        <p class="card-text">Management and Backend Web Developer</p></center>
+                </div>
+                <div class="card-footer">
+                    <center><small class="text-muted">Know more</small></center>
+                </div>
+              </div>
+          </div>
+          <br>
+          <br>
+          <hr style="border: solid; width: 20%;">
+          <br>
+          <br>
+          <center><h2 style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Get in touch!</h2></center>
+          <br>
+          <br>
+        <form>
+            <div class="form-row" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Name</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6" style="font-family: 'Montserrat', sans-serif;">
+                <label for="inputPassword4">Last Name</label>
+                <input type="text" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">
+              <label for="inputAddress">Email</label>
+              <input type="email" class="form-control" id="inputAddress" placeholder="abcd@example.com">
+            </div>
+            <div class="form-group" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">
+              <label for="inputAddress2">Address</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Street, Apartment, studio, or floor">
+            </div>
+            <div class="form-row" style="font-family: 'Montserrat', sans-serif; font-weight: 900;">
+              <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            </div>
+            <div class="form-group" style="font-family: 'Montserrat', sans-serif; font-weight: 100;">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    You accept to recieve alerts and news from Apni Dukaan
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="margin-top: 2.5%; margin-bottom: 7%;">Send</button>
+          </form>
+          <div>
+
+          </div>
+</div>
+
+</div>
+{% endblock body %}
